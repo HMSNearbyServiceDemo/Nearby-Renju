@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<!--    android:background="@drawable/background">-->
+
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="93dp"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/rankText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="45dp"
+        android:text="1段" />
+
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="78dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="152dp"
+        android:singleLine="true"
+        android:text="Nearby Players:"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="300dp"
+        android:layout_height="133dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="191dp"
+        android:background="@drawable/border_ui" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="336dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:text="请仔细阅读以下注意事项："-->
+<!--        android:textSize="23sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="382dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:text="1.这是一个本地联机游戏，不支持单机模式，不支持在线匹配。\n-->
+<!--2.需要对局双方在附近范围（10米左右），打开WIFI和蓝牙开关，并连接到互联网（对战不消耗流量）。\n-->
+<!--3.两人同时点击“开始对弈”，线下约定好先后手，分别点击“先手”/“后手”开始对局。\n-->
+<!--4.附近的棋手及段位需要双方连接互联网才能显示，对方APP退出或退到后台则会在列表消失\n-->
+<!--5.支持Android 8及以上操作系统"/>-->
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/button_shape"
+        android:text="start game"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

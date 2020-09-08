@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <win.regin.renju.RenjuView
+        android:id="@+id/rvRenju"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/newRenju"
+        style="@style/Renju.EndAdd"
+        android:layout_width="84dp"
+        android:text="@string/newRenju"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/undo"
+        app:layout_constraintTop_toBottomOf="@+id/rvRenju"
+        app:rippleColor="@color/colorPrimaryDark"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/undo"
+        style="@style/Renju.EndAdd"
+        android:text="@string/undo"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/suggest"
+        app:layout_constraintTop_toBottomOf="@+id/rvRenju"
+        app:rippleColor="@color/colorPrimaryDark"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/suggest"
+        style="@style/Renju.EndAdd"
+        android:text="@string/suggest"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvRenju"
+        app:rippleColor="@color/colorPrimaryDark"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/rule"
+        style="@style/Renju.EndAdd"
+        android:text="@string/rule"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suggest"
+        app:rippleColor="@color/colorPrimaryDark"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/level"
+        style="@style/Renju"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="6dp"
+        android:text="初级"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/undo"
+        app:layout_constraintStart_toStartOf="@+id/undo"
+        app:layout_constraintTop_toBottomOf="@+id/undo"
+        app:rippleColor="@color/colorPrimaryDark"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/mode"
+        style="@style/Renju"
+        android:layout_marginTop="8dp"
+        android:text="@string/human_computer"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/newRenju"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/newRenju"
+        app:layout_constraintTop_toBottomOf="@+id/newRenju"
+        app:rippleColor="@color/colorPrimaryDark" />
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/simulate"
+        style="@style/Renju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/simulate"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/newRenju"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/newRenju"
+        app:layout_constraintTop_toBottomOf="@+id/newRenju"
+        app:rippleColor="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:id="@+id/blackChess"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvRenju"
+        app:srcCompat="@drawable/ic_black_chess" />
+
+    <TextView
+        android:id="@+id/blackName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:text="黑方"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blackChess" />
+
+    <ImageView
+        android:id="@+id/whiteChess"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvRenju"
+        app:srcCompat="@drawable/ic_white_chess" />
+
+    <ImageView
+        android:id="@+id/VS"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvRenju"
+        app:srcCompat="@drawable/vs" />
+
+    <TextView
+        android:id="@+id/whiteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:text="白方"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whiteChess" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
